@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
 void zone(char *S) {
 	long int zero, one;
 
@@ -14,7 +18,6 @@ void zone(char *S) {
 			break;
 		}
 	}
-
 	if (zero > one) {
 		printf("0 %ld", zero);
 	} else {
@@ -33,6 +36,7 @@ void cases(int *T) {
 		printf("Enter the string: ");
 		char S[N];
 		scanf("%s", S);
+		printf("%s", S);
 
 		if (N >= 1 || N <= pow(10, 5)) {
 			zone(S);
@@ -42,7 +46,7 @@ void cases(int *T) {
 
 int main()
 {
-	printf("Enter the number of cases: ");
+	printf("\nEnter the number of cases: ");
 	int T;
 	scanf("%d", &T);
 
