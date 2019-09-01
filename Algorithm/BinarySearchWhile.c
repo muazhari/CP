@@ -23,7 +23,7 @@ int main() {
     if (toFind < arr[mid]) {
       max = mid /= 2;
     } else if (toFind > arr[mid]) {
-      min = mid += (mid) / 2;
+      min = mid += (max - mid) / 2;
       printf("%d\n", (max));
     }
   }
